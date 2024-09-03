@@ -1,0 +1,22 @@
+def verificar_estacao_do_ano(mes):
+    
+    estacoes = {
+        1: "Verão",
+        2: "Verão",
+        3: "Verão" if dia < 20 else "Outono",
+        4: "Outono",
+        5: "Outono",
+        6: "Outono" if dia < 21 else "Inverno",
+        7: "Inverno",
+        8: "Inverno",
+        9: "Inverno" if dia < 23 else "Primavera",
+        10: "Primavera",
+        11: "Primavera",
+        12: "Primavera" if dia < 21 else "Verão",
+    }
+    
+    if mes in estacoes:
+        return estacoes[mes]
+    else:
+        return "Mês inválido"
+
